@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GradeKing</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_main_page">MainPage</string>
+    <string name="title_activity_calculate_gp">CalculateGPA</string>
+    <string name="title_activity_semester_gp">SemesterGPA</string>
+    <string name="title_activity_final_exam">FinalExam</string>
+    <string name="title_activity_final_output">FinalOutput</string>
+    <string name="title_activity_about">About</string>
+
+</resources>

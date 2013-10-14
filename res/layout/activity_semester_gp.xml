@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_repeat" 
+    android:gravity="center_vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SemesterGPA" >
+
+    <Button
+        android:id="@+id/buttonMain"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="96dp"
+        android:text="Return to Main Menu" 
+        android:background="@drawable/button_bg"
+        android:padding="15dp"
+        android:shadowColor="#D9AB40"
+        android:shadowDx="2.0"
+        android:shadowDy="2.0"
+        android:shadowRadius="3.0" 
+        android:textColor="#636363"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textSGPA2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonMain"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="47dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Thank you for using GradeKing!\n\nFor a final exam grade calculator, please visit the Main Menu."
+        android:textColor="#636363"
+        android:textSize="18sp"
+        android:width="250dp" />
+
+    <TextView
+        android:id="@+id/textSGPA1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Based on your input, your semester GPA is:"
+        android:textColor="#636363"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textSGPA_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textSGPA1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/rounded_corners"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_horizontal"
+        android:padding="15dp"
+        android:shadowColor="#E2D4A9"
+        android:shadowDx="2.0"
+        android:shadowDy="2.0"
+        android:shadowRadius="2.0"
+        android:textSize="20sp" />
+
+</RelativeLayout>

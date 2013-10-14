@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.imaginereality.gradeking"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.imaginereality.gradeking.GradeKing"
+            android:label="GradeKing" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.imaginereality.gradeking.CalculateGPA"
+            android:label="@string/title_activity_calculate_gp" >
+        </activity>
+        <activity
+            android:name="com.imaginereality.gradeking.SemesterGPA"
+            android:label="@string/title_activity_semester_gp" >
+        </activity>
+        <activity
+            android:name="com.imaginereality.gradeking.FinalExam"
+            android:label="@string/title_activity_final_exam" >
+        </activity>
+        <activity
+            android:name="com.imaginereality.gradeking.FinalOutput"
+            android:label="@string/title_activity_final_output" >
+        </activity>
+        <activity
+            android:name="com.imaginereality.gradeking.About"
+            android:label="@string/title_activity_about" >
+        </activity>
+    </application>
+
+</manifest>
