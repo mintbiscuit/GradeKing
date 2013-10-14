@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_repeat" 
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".FinalExam" >
+
+    <TextView
+        android:id="@+id/textPercentKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editPercent"
+        android:layout_alignBottom="@+id/editPercent"
+        android:layout_toRightOf="@+id/editPercent"
+        android:text="%"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/editPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textFinal2"
+        android:layout_below="@+id/textFinal2"
+        android:layout_marginLeft="24dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:width="50dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textFinal3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textFinal2"
+        android:layout_below="@+id/editPercent"
+        android:layout_marginTop="22dp"
+        android:text="What grade do you currently have?"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="18sp" 
+        android:fontFamily="sans-serif-light"
+        android:textColor="#636363" 
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/editGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editPercent"
+        android:layout_below="@+id/textFinal3"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:width="50dp" />
+
+    <TextView
+        android:id="@+id/textPercentKey2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editGrade"
+        android:layout_alignLeft="@+id/textPercentKey"
+        android:text="%"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/buttonFinalExam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_bg"
+        android:padding="15dp"
+        android:shadowColor="#D9AB40"
+        android:shadowDx="2.0"
+        android:shadowDy="2.0"
+        android:shadowRadius="3.0"
+        android:text="Find Your Grade"
+        android:textColor="#636363"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/crown" />
+
+    <TextView
+        android:id="@+id/textFinal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textFinal0"
+        android:layout_below="@+id/gradeGroup"
+        android:layout_marginTop="11dp"
+        android:text="How much is your final exam worth?"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="18sp" 
+        android:fontFamily="sans-serif-light"
+        android:textColor="#636363" 
+        tools:ignore="HardcodedText" />
+
+    <RadioGroup
+        android:id="@+id/gradeGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textFinal1"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <RadioButton
+            android:id="@+id/grade0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:paddingRight="15dp"
+            android:text="A"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/grade1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="15dp"
+            android:text="B"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/grade2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="15dp"
+            android:text="C"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/grade3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="15dp"
+            android:text="D"
+            tools:ignore="HardcodedText" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textFinal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textFinal0"
+        android:layout_below="@+id/textFinal0"
+        android:layout_marginTop="17dp"
+        android:text="Well, that all depends on what grade you want to receive:" 
+        android:fontFamily="sans-serif-light"
+        android:textColor="#636363" 
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textFinal0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/rounded_corners"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:shadowColor="#E2D4A9"
+        android:shadowDx="2.0"
+        android:shadowDy="2.0"
+        android:shadowRadius="2.0"
+        android:text="So, you want to know how hard you have to work for your final exam, huh?"
+        android:textColor="#636363"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>
